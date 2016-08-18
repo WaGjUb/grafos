@@ -1,10 +1,17 @@
+##Autor Daniel Costa Valerio (WaGjUb)
+##Representação de grafos (lista e matriz)
+##Adicionar (V,E)
+##Remover (V,E)
+##Buscar (V,E)
 class aresta(object):
     def __init__(self, origem, destino):
         self.origem = origem
         self.destino = destino
+
 class vertice(object):
     def __init__(self):
         self.valor = None
+
 class grafo(object):
     def __init__(self):
         self.Larestas = []
@@ -44,7 +51,6 @@ class grafo(object):
 if __name__ == "__main__":
     entrada = None
 
-    opcoes = [saida, ]
     while entrada != 0:
         menu()
         entrada = input(": ")
