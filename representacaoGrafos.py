@@ -48,34 +48,34 @@ class grafo(object):
         except ValueError:
             return None
         
-def caso_1(g):
+def caso_1(g): # adicionar vertice
     valor = input('Digite o valor do vertice: ')
     v = vertice(valor)
     g.adicionarVertice(v)
     
-def caso_2(g):
+def caso_2(g): # remover vertice
     valor = input('Digite o valor do vertice: ')
     v = vertice(valor)
     g.removerVertice(v)
 
-def caso_3(g):
+def caso_3(g): # adicionar aresta
     valor = input('Digite a origem e destino separado por vírgula Ex. o,d: ').split(',')
     if len(valor) != 2:
         a = aresta(valor[0], valor[1])
         g.adicionarAresta(a)
 
-def caso_4(g):
+def caso_4(g): # remover aresta
     valor = input('Digite a origem e destino separado por vírgula Ex. o,d: ').split(',')
     if len(valor) != 2:
         a = aresta(valor[0], valor[1])
         g.removerAresta(a)
 
-def caso_5(g):
+def caso_5(g): # buscar vertice
     valor = input('Digite o valor do vertice: ')
     v = vertice(valor)
     g.buscarVertice(v)
 
-def caso_6(g):
+def caso_6(g): # buscar aresta
     valor = input('Digite a origem e destino separado por vírgula Ex. o,d: ').split(',')
     if len(valor) != 2:
         a = aresta(valor[0], valor[1])
